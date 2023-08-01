@@ -13,9 +13,9 @@ services:
   volumes:
     - /your/storage/path/:/data # where transmission will store the data
     - /your/config/path/:/config # where transmission-home is stored
-    - /volume1/docker/ipvanish/:/etc/openvpn/custom/
+    - /volume1/docker/BulletVPN/:/etc/openvpn/custom/
   environment:
-    - OPENVPN_PROVIDER=PIA
+    - OPENVPN_PROVIDER=BulletVPN
     - OPENVPN_USERNAME=username
     - OPENVPN_PASSWORD=password
     - OPENVPN_OPTS=--inactive 3600 --ping 10 --ping-exit 60
