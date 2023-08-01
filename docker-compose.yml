@@ -13,6 +13,7 @@ services:
   volumes:
     - /your/storage/path/:/data # where transmission will store the data
     - /your/config/path/:/config # where transmission-home is stored
+    - /volume1/docker/ipvanish/:/etc/openvpn/custom/
   environment:
     - OPENVPN_PROVIDER=PIA
     - OPENVPN_USERNAME=username
